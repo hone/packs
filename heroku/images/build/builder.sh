@@ -33,7 +33,7 @@ mkdir -p /tmp/env
   --buildpack=${buildpack} \
   ${APP_DIR} \
   ${BUILDPACKS_DIR} \
-  $(dirname ${SLUG_FILE})/release.yml
+  ${APP_DIR}/release.yml
 
 /packs/cytokine make-slug /tmp/slug.tgz ${APP_DIR}
 
